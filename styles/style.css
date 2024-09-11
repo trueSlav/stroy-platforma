@@ -1,0 +1,14 @@
+:root {
+	--main-color: #fff;
+	--accent-color: #e84212;
+	--text-color: #000;
+	--main-font: Ubuntu;
+}
+
+.page {
+	font-family: var(--main-font, sans-serif);
+	color: var(--text-color, #000);
+	background-color: var(--main-color, #fff);
+	font-weight: 400;
+	font-size: 16px;
+}
