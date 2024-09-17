@@ -10,15 +10,7 @@ body {
 	margin: 0 auto;
 }
 
-.content-section {
-	padding: 0 5vw;
-}
 
-.content-out {
-	position: relative;
-	inline-size: calc(100% + 10vi);
-	inset-inline-end: 5vi;
-}
 
 h1,
 h2,
