@@ -40,7 +40,7 @@
 	<header class="header">
 
 		<article class="header__info content-out">
-			<p>ГАРАНТ СТРОЙ ООО</p>
+			<p>СТРОЙ ПЛАТФОРМА ООО</p>
 			<!-- адрес 100% нужно записать более семантично -->
 			<p class="adres">672007, Забайкальский край, г. Чита, ул. Ленина, д. 149Б, помещ. 4</p>
 			<p>Почта: <a href="mailto:gs-chita@mail.ru">gs-chita@mail.ru</a> </p>
@@ -78,12 +78,51 @@
 			</div>
 		</section>
 
+		<!-- рефактор создать блок промо -->
 		<section class="header__promo">
-			<h1 class="title">Компания Строй Платформа</h1>
-			<p class="subtitle">Строительные работы для всех видов обьектов и сооружений</p>
+			<h1 class="title header__promo-title"><span>Компания</span> Строй Платформа</h1>
+			<p class="subtitle header__promo-subtitle">Строительные работы для всех видов обьектов и сооружений</p>
+			<button class="button header__promo-button">Подробнее</button>
+			<div class="header__promo-background">
+				<picture>
+					<img class="header__image" src="./images/header-promo.jpg"
+						alt="фоновое изображение строительного обьекта вид сверху">
+					<figcaption class="figcaption"><span class="decorate-text-line"></span>Строительство ПС 110кВ «Быстринский
+						ГОК», Забайкальский
+						край, Газимуро-Заводский район.</figcaption>
+				</picture>
+				<!-- <svg aria-hidden="true" class="decorate-line-red" width="280" height="770" viewBox="0 0 280 770"
+					xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 770L210 0H280L70 770H0Z" />
+				</svg>
+				<svg aria-hidden="true" class="decorate-line-black" width="280" height="770" viewBox="0 0 280 770"
+					xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 770L210 0H280L70 770H0Z" />
+				</svg> -->
+
+			</div>
 		</section>
 
 	</header>
+
+	<main class="main">
+		<section class="product">
+			<h2 class="title product__title"><span>Наш</span> ассортимент</h2>
+			<p class="subtitle product__subtitle">Строительство жилых и нежилых зданий, производство земляных работ,
+				производство
+				электромонтажных, санитарно-технических и прочих строительно-монтажных работ.</p>
+			<ul class="product__list">
+				<li class="product__item">
+					<div>
+						<img src="./images/others/1686667657_polinka-top-p-stroika-foto-kartinki-krasivo-11.jpg"
+							alt="квадратные бревна сложенны друг на друга" class="product__card-image">
+					</div>
+					<p class="product__card-description">Доски</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+
 </body>
 
 </html>
