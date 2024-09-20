@@ -50,7 +50,7 @@
 }
 
 .header {
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .nav {
@@ -284,4 +284,10 @@
 	text-align: center;
 }
 
-.product__list
+.product__list {
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	gap: 20px;
+	grid-auto-rows: 250px;
+	grid-auto-flow: row dense
+}
