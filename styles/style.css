@@ -49,9 +49,9 @@
 	color: var(--second-text-color, #fff);
 }
 
-.header {
-	/* height: 100vh; */
-}
+/* .header {
+	height: 100vh;
+} */
 
 .nav {
 	font-weight: 500;

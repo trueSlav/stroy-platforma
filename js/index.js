@@ -38,7 +38,7 @@ function createCard(data) {
 		const cardItem = 
 				`
 					<li class="product__item" data-product-id="${id}">
-						<a href="/card.html?id=${id}">
+						<a href="./card.html?id=${id}">
 							<div class="product-image-wrapper">
 								<img src="./images/other/${img}"
 									alt="квадратные бревна сложенны друг на друга" class="product__card-image">
