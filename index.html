@@ -38,7 +38,7 @@
 </head>
 
 <body class="page">
-
+	<!-- шапка перестает быть sticky после блока header -->
 	<header class="header">
 
 		<article class="header__info content-out">
@@ -107,6 +107,8 @@
 
 	</header>
 
+
+	<!-- добавить модификатор title_fz40, чтобы не переписывать тайтлы для h2-->
 	<main class="main">
 		<section class="product">
 			<h2 class="title product__title"><span>Наш</span> ассортимент</h2>
@@ -115,8 +117,101 @@
 				электромонтажных, санитарно-технических и прочих строительно-монтажных работ.</p>
 			<ul class="product__list"></ul>
 		</section>
+
+		<section class="about">
+			<article class="about__board content-out">
+				<p>Основой успешной деятельности предприятия являются пристальное внимание к подготовке собственных кадров,
+					долгосрочные отношения с заказчиками, взаимовыгодные отношения с партнерами и высокое качество предоставляемых
+					услуг.
+					Мы строим надежные решения на годы, выстраивая надежные отношения на десятилетия.</p>
+			</article>
+			<article class="about__selected-area">
+				<h2 class="title"><span>Почему</span> Мы?</h2>
+				<ul class="about__list">
+					<li class="about__item">
+						<p class="item-title">Квалифицированные сотрудники</p>
+						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. </p>
+					</li>
+					<li class="about__item">
+						<p class="item-title">Имеем лицензию МЧС</p>
+						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</li>
+					<li class="about__item">
+						<p class="item-title">Собственная техника</p>
+						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</li>
+					<li class="about__item">
+						<p class="item-title">Строительная лаборатория</p>
+						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</li>
+					<li class="about__item">
+						<p class="item-title">Имеем членство СРО</p>
+						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</li>
+					<li class="about__item">
+						<p class="item-title">Опыт генподрядных работ</p>
+						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</li>
+				</ul>
+			</article>
+		</section>
+
+		<!-- сделать нормально -->
+		<section class="contact-us">
+			<h2 class="title contact-us__title">Если у вас возникнут <span>вопросы</span></h2>
+			<div class="form-wrapper">
+				<form action="" class="form contact-us__form">
+					<div class="form__fieldset">
+						<div>
+							<label for="name">Введите ФИО:</label>
+							<input type="text" placeholder="Иванов Иван Иванович" name="name" id="name" required>
+						</div>
+						<div>
+							<label for="mail">Введите почту:</label>
+							<input type="email" placeholder="examle@mail.ru" name="mail" id="mail" required>
+						</div>
+						<div>
+							<label for="organization">Название организации:</label>
+							<input type="text" placeholder="Название организации" name="organization" id="organization">
+						</div>
+						<div>
+							<label for="phone">Введите ваш телефон:</label>
+							<input type="tel" placeholder="+7 (999) 999-99-99" name="phone" id="phone" required>
+						</div>
+						<div>
+							<label for="message">Введите сообщение:</label>
+							<textarea id="message" name="message" rows="5" cols="33"></textarea>
+						</div>
+						<div>
+							<label for="file">Прикрепить файл</label>
+							<input type="file" name="file" id="file">
+						</div>
+						<div>
+							<label for="approval">Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных.</label>
+							<input type="checkbox" name="approval" id="approval" required>
+						</div>
+						<button class="button form__button" type="submit">Отправить</button>
+					</div>
+				</form>
+				<article class="contact-us__info"></article>
+			</div>
+		</section>
+
+
 	</main>
 
+	<article class="header__info content-out">
+		<p>СТРОЙ ПЛАТФОРМА ООО</p>
+		<!-- адрес 100% нужно записать более семантично -->
+		<p class="adres">672007, Забайкальский край, г. Чита, ул. Ленина, д. 149Б, помещ. 4</p>
+		<p>Почта: <a href="mailto:gs-chita@mail.ru">gs-chita@mail.ru</a> </p>
+	</article>
 </body>
 
 </html>
