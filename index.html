@@ -53,7 +53,7 @@
 				<!-- сделать лого ссылкой -->
 				<!-- загрузить несколько форматов лого -->
 				<article class="header__logo">
-					<img src="./images/logo-min.png" alt="логотип компании Строй Платформа">
+					<img src="./images/logo-two.jpg" alt="логотип компании Строй Платформа">
 				</article>
 
 				<!-- Добавить ссылки в менюшку -->
@@ -164,47 +164,114 @@
 
 		<!-- сделать нормально -->
 		<section class="contact-us">
+
 			<h2 class="title contact-us__title">Если у вас возникнут <span>вопросы</span></h2>
+
 			<div class="form-wrapper">
-				<form action="" class="form contact-us__form">
+				<form action="" class="form">
 					<div class="form__fieldset">
-						<div>
-							<label for="name">Введите ФИО:</label>
-							<input type="text" placeholder="Иванов Иван Иванович" name="name" id="name" required>
-						</div>
-						<div>
-							<label for="mail">Введите почту:</label>
-							<input type="email" placeholder="examle@mail.ru" name="mail" id="mail" required>
-						</div>
-						<div>
-							<label for="organization">Название организации:</label>
-							<input type="text" placeholder="Название организации" name="organization" id="organization">
-						</div>
-						<div>
-							<label for="phone">Введите ваш телефон:</label>
-							<input type="tel" placeholder="+7 (999) 999-99-99" name="phone" id="phone" required>
-						</div>
-						<div>
-							<label for="message">Введите сообщение:</label>
-							<textarea id="message" name="message" rows="5" cols="33"></textarea>
-						</div>
-						<div>
-							<label for="file">Прикрепить файл</label>
-							<input type="file" name="file" id="file">
-						</div>
-						<div>
-							<label for="approval">Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных.</label>
-							<input type="checkbox" name="approval" id="approval" required>
-						</div>
+
+						<label class="form__label" for="name">
+							<span class="form__label-text">Введите ФИО:</span>
+							<input type="text" placeholder="Иванов Иван Иванович" name="name" id="name" required
+								class="form__input-textfield">
+						</label>
+
+						<label class="form__label" for="mail">
+							<span class="form__label-text">Введите почту:</span>
+							<input type="email" placeholder="examle@mail.ru" name="mail" id="mail" required
+								class="form__input-textfield">
+						</label>
+
+						<label class="form__label" for="organization">
+							<span class="form__label-text">Название организации:</span>
+							<input type="text" placeholder="Название организации" name="organization" id="organization"
+								class="form__input-textfield">
+						</label>
+
+						<label class="form__label" for="phone">
+							<span class="form__label-text">Введите ваш телефон:</span>
+							<input type="tel" placeholder="+7 (999) 999-99-99" name="phone" id="phone" required
+								class="form__input-textfield">
+						</label>
+
+						<label class="form__label" for="message">
+							<span class="form__label-text">Введите сообщение:</span>
+							<textarea id="message" name="message" rows="5" cols="30" class="form__input-textarea"></textarea>
+						</label>
+
+						<label class="form__label" for="file">
+							<span class="form__label-text">Прикрепить файл</span>
+							<input type="file" name="file" id="file" class="form__input-file">
+						</label>
+
+						<label class="chekbox-wrapper" for="approval">
+							<input class="checkbox-input visually-hidden" type="checkbox" name="approval" id="approval" required>
+							<span class="pseudo-checkbox"></span>
+							<span class="chekbox-text">Нажимая кнопку “Отправить”, я даю согласие на обработку
+								персональных данных.</span>
+						</label>
+
 						<button class="button form__button" type="submit">Отправить</button>
 					</div>
+
 				</form>
-				<article class="contact-us__info"></article>
+				<article class="contact-us__info info">
+					<ul class="info__list">
+						<li class="info__item">
+							<h3 class="info__title">Генеральный директор</h3>
+							<p>Гордова Марина Сергеевна</p>
+							<a href="tel:+79999999999" class="info__phone">+7 (999) 999-99-98</a>
+						</li>
+						<li class="info__item">
+							<h3 class="info__title">Зам. генерального директора</h3>
+							<p>Гордова Марина Сергеевна</p>
+							<a href="tel:+79999999999" class="info__phone">+7 (999) 999-99-98</a>
+						</li>
+						<li class="info__item">
+							<h3 class="info__title">Производтвенно - технический
+								отдел</h3>
+							<p>Гордова Марина Сергеевна</p>
+							<a href="tel:+79999999999" class="info__phone">+7 (999) 999-99-98</a>
+						</li>
+						<li class="info__item info__item-also">
+							<p>email<span>gs-chita@mail.ru</span></p>
+							<p>ОГРН<span>1057536023984</span></p>
+							<p>ИНН<span>7356058090</span></p>
+						</li>
+					</ul>
+				</article>
 			</div>
+
 		</section>
 
 
 	</main>
+	<!-- создать блок для лого -->
+	<footer class="footer content-out">
+		<article class="footer__logo logo">
+			<img src="./images/logo-one.jpg" alt="логотип компании Строй Платформа">
+		</article>
+		<nav class="nav footer__nav">
+			<ul class="nav__list">
+				<li class="nav__item active-list-item">Главная</li>
+				<li class="nav__item">О компании</li>
+				<li class="nav__item">Услуги</li>
+				<li class="nav__item">Обьекты</li>
+				<li class="nav__item">Контакты</li>
+			</ul>
+		</nav>
+		<article class="contacts footer__contacts">
+			<div class="contacts__phone-logo">
+				<img src="./images/header-phone.png" alt="изображение телефона свяжитесь с нами">
+			</div>
+			<p class="contacts__block">
+				<span>Позвонить нам</span>
+				<!-- подробнее узнать как правильно номер записать -->
+				<a href="tel:+79999999999" class="contacts__phone">+7 (999) 999-99-98</a>
+			</p>
+		</article>
+	</footer>
 
 	<article class="header__info content-out">
 		<p>СТРОЙ ПЛАТФОРМА ООО</p>
