@@ -56,19 +56,43 @@ function loadProductDetails(data) {
 
 
 function renderInfoProduct(product) {
-	const { img, title, price, descr } = product;
+	const { img, title, pdf, descr, inside } = product;
+	
+	let li = '';
+	inside.forEach(element => {
+		console.log(element);
+		
+		li +=
+			`
+			<a target="_blank" href="./data/catalog/${pdf}">
+				<li>
+					${element}
+				</li>
+			</a>
+			`
+	})
+
 	const productItem = 
 			`
 			<div class="product">
 					<h2 class="product__title">${title}</h2>
-							<img src="./images/other/${img}"
-					<p class="product__descr">${descr}</p>
-					<div class="product__inner-price">
-							<div class="product__price">
-									<b>Цена:</b>
-									${price}₽
-							</div>
+
+					<article>
+					<div class="product__image-wrapper">
+					<img src="./images/other/${img}" alt="${descr}">
 					</div>
+					<p class="product__descr">${descr}</p>
+					<h1><a href="./data/catalog/${pdf}">ПРАЙС-ЛИСТ</a></h1>
+					</article>
+
+					<div class="product__list-wrapper">
+						<h2>Каталог</h2>
+						<ul class="product__list">
+							${li}
+						</ul>
+					</div>
+
+					
 			</div>
 			`
 			wrapper.insertAdjacentHTML('beforeend', productItem);
