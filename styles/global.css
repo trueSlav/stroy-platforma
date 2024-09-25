@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	min-inline-size: 375px;
 	margin: 0 auto;
@@ -36,6 +40,7 @@ a {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
+	text-decoration: none;
 }
 
 img {

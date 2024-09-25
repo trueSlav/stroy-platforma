@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="./styles/global.css">
 	<link rel="stylesheet" href="./styles/variables.css">
 	<link rel="stylesheet" href="./styles/style.css">
-	<title>СТРОЙ ПАЛАТФОРМА</title>
+	<title>ООО "МПК СТРОЙПЛАТФОРМА"|Краснодар</title>
 
 	<script type="module" src="./js/index.js" defer></script>
 </head>
@@ -41,29 +41,27 @@
 	<!-- шапка перестает быть sticky после блока header -->
 	<header class="header">
 
-		<article class="header__info content-out">
-			<p>СТРОЙ ПЛАТФОРМА ООО</p>
-			<!-- адрес 100% нужно записать более семантично -->
-			<p class="adres">672007, Забайкальский край, г. Чита, ул. Ленина, д. 149Б, помещ. 4</p>
-			<p>Почта: <a href="mailto:gs-chita@mail.ru">gs-chita@mail.ru</a> </p>
-		</article>
+		<address class="header__info content-out">
+			<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
+			<p class="adres"><a target="_blank"
+					href="https://yandex.ru/maps/?um=constructor%3Af7a4eb127d96fed8bd5a5d01007549630ed17ac38d044d98bebab4d25fed0a8e&source=constructorLink">Центральный
+					офис ул. Весенняя 22 офис 43</a></p>
+			<p>Почта: <a href="mailto:mpk.sp@bk.ru">mpk.sp@bk.ru</a> </p>
+		</address>
 
 		<section class="header__section">
 			<div class="header-section-wrapper content-out">
-				<!-- сделать лого ссылкой -->
-				<!-- загрузить несколько форматов лого -->
 				<article class="header__logo">
-					<img src="./images/logo-two.jpg" alt="логотип компании Строй Платформа">
+					<a href="./index.html"><img src="./images/logo-two.jpg" alt="логотип компании Строй Платформа"></a>
 				</article>
 
 				<!-- Добавить ссылки в менюшку -->
 				<nav class="nav header__nav">
 					<ul class="nav__list">
-						<li class="nav__item active-list-item">Главная</li>
-						<li class="nav__item">О компании</li>
-						<li class="nav__item">Услуги</li>
-						<li class="nav__item">Обьекты</li>
-						<li class="nav__item">Контакты</li>
+						<li class="nav__item active-list-item"><a href="./index.html">Главная</a></li>
+						<li class="nav__item"><a href="#about">О компании</a></li>
+						<li class="nav__item"><a href="#product">Услуги</a></li>
+						<li class="nav__item"><a href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 
@@ -73,8 +71,7 @@
 					</div>
 					<p class="contacts__block">
 						<span>Позвонить нам</span>
-						<!-- подробнее узнать как правильно номер записать -->
-						<a href="tel:+79999999999" class="contacts__phone">+7 (999) 999-99-98</a>
+						<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
 					</p>
 				</article>
 			</div>
@@ -82,27 +79,13 @@
 
 		<!-- рефактор создать блок промо -->
 		<section class="header__promo">
-			<h1 class="title header__promo-title"><span>Компания</span> Строй Платформа</h1>
-			<p class="subtitle header__promo-subtitle">Строительные работы для всех видов обьектов и сооружений</p>
+			<h1 class="title header__promo-title"><span>Компания</span><br> Строй Платформа</h1>
+			<article class="subtitle header__promo-subtitle">
+				<p>ООО «МПК СТРОЙПЛАТФОРМА» занимается строительством внешних инженерных сетей, монтажными работами по
+					вентиляции, кондиционированию, сварочным работам, а так же комплексными поставками материалов для комплектации
+					строительных объектов.</p>
+			</article>
 			<button class="button header__promo-button">Подробнее</button>
-			<div class="header__promo-background">
-				<picture>
-					<img class="header__image" src="./images/header-promo.png"
-						alt="фоновое изображение строительного обьекта вид сверху">
-					<figcaption class="figcaption"><span class="decorate-text-line"></span>Строительство ПС 110кВ «Быстринский
-						ГОК», Забайкальский
-						край, Газимуро-Заводский район.</figcaption>
-				</picture>
-				<!-- <svg aria-hidden="true" class="decorate-line-red" width="280" height="770" viewBox="0 0 280 770"
-					xmlns="http://www.w3.org/2000/svg">
-					<path d="M0 770L210 0H280L70 770H0Z" />
-				</svg>
-				<svg aria-hidden="true" class="decorate-line-black" width="280" height="770" viewBox="0 0 280 770"
-					xmlns="http://www.w3.org/2000/svg">
-					<path d="M0 770L210 0H280L70 770H0Z" />
-				</svg> -->
-
-			</div>
 		</section>
 
 	</header>
@@ -110,15 +93,14 @@
 
 	<!-- добавить модификатор title_fz40, чтобы не переписывать тайтлы для h2-->
 	<main class="main">
-		<section class="product">
+		<section class="product" id="product">
 			<h2 class="title product__title"><span>Наш</span> ассортимент</h2>
-			<p class="subtitle product__subtitle">Строительство жилых и нежилых зданий, производство земляных работ,
-				производство
-				электромонтажных, санитарно-технических и прочих строительно-монтажных работ.</p>
+			<p class="subtitle product__subtitle">Мы поставляем оборудование для строительных и промышленных компаний,
+				производственных предприятий, и металлургических заводов производителей по всей России.</p>
 			<ul class="product__list"></ul>
 		</section>
 
-		<section class="about">
+		<section class="about" id="about">
 			<article class="about__board content-out">
 				<p>Основой успешной деятельности предприятия являются пристальное внимание к подготовке собственных кадров,
 					долгосрочные отношения с заказчиками, взаимовыгодные отношения с партнерами и высокое качество предоставляемых
@@ -128,42 +110,58 @@
 			<article class="about__selected-area">
 				<h2 class="title"><span>Почему</span> Мы?</h2>
 				<ul class="about__list">
+					<li class="about__item ">
+						<p class="item-title">Компания предлагает материалы для осуществления монтажных работ:</p>
+						<ul class="item-description">
+							<li>Расходные сварочные материалы;</li>
+							<li>Инженерные системы оборудование;</li>
+							<li>Нержавеющий металлопрокат;</li>
+							<li>Медный металлопрокат;</li>
+							<li>Вентиляционные изделия;</li>
+							<li>Вентиляторы системы дымоудаления;</li>
+							<li>Пиломатериалы (доска обрезная брус фанера);</li>
+						</ul>
+					</li>
 					<li class="about__item">
+						<p class="item-title">Строительно-монтажные работы:</p>
+						<ul class="item-description">
+							<li>Монтаж внешних инженерных сетей</li>
+							<li>Путепроводы</li>
+							<li>Теплотрассы</li>
+							<li>Прокладка теплопровода</li>
+							<li>Водоотведения</li>
+							<li>Водоснабжение</li>
+							<li>Отопление</li>
+							<li>Котельные установки</li>
+							<li>Инженерные системы</li>
+							<li>Сварочные работы</li>
+							<li>Монтаж навигационных систем</li>
+							<li>Монтаж вентиляции</li>
+							<li>Поставка вентиляционных изделий</li>
+							<li>Дорожное строительство коммуникаций</li>
+							<li>Монтаж ливневых систем</li>
+							<li>Отведение сточных вод</li>
+
+						</ul>
+					</li>
+					<li class="about__item ">
 						<p class="item-title">Квалифицированные сотрудники</p>
-						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua. </p>
+						<p class="item-description">В нашей компании мы гордимся нашими высококвалифицированными сотрудниками. Они —
+							основа нашего успеха и ключевой фактор, обеспечивающий высокое качество наших услуг и продуктов.</p>
 					</li>
 					<li class="about__item">
-						<p class="item-title">Имеем лицензию МЧС</p>
-						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.</p>
-					</li>
-					<li class="about__item">
-						<p class="item-title">Собственная техника</p>
-						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.</p>
-					</li>
-					<li class="about__item">
-						<p class="item-title">Строительная лаборатория</p>
-						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.</p>
-					</li>
-					<li class="about__item">
-						<p class="item-title">Имеем членство СРО</p>
-						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.</p>
-					</li>
-					<li class="about__item">
-						<p class="item-title">Опыт генподрядных работ</p>
-						<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.</p>
+						<p class="item-title">Гарантия качества</p>
+						<p class="item-description">Наша компания известна своим высоким уровнем предоставляемых услуг и
+							производимых продуктов. Это стало возможным благодаря профессионализму и мастерству наших сотрудников. Они
+							постоянно совершенствуют свои навыки, следят за тенденциями в своей области и применяют новейшие
+							технологии в работе.</p>
 					</li>
 				</ul>
 			</article>
 		</section>
 
 		<!-- сделать нормально -->
-		<section class="contact-us">
+		<section class="contact-us" id="contacts">
 
 			<h2 class="title contact-us__title">Если у вас возникнут <span>вопросы</span></h2>
 
@@ -220,31 +218,32 @@
 					<ul class="info__list">
 						<li class="info__item">
 							<h3 class="info__title">Генеральный директор</h3>
-							<p>Гордова Марина Сергеевна</p>
-							<a href="tel:+79999999999" class="info__phone">+7 (999) 999-99-98</a>
+							<p>Утин Петр Петрович</p>
 						</li>
 						<li class="info__item">
 							<h3 class="info__title">Зам. генерального директора</h3>
-							<p>Гордова Марина Сергеевна</p>
-							<a href="tel:+79999999999" class="info__phone">+7 (999) 999-99-98</a>
+							<p>Сергей Валерьевич</p>
+							<a href="tel:+79693009269" class="info__phone">+7 969-300-92-69</a>
 						</li>
 						<li class="info__item">
-							<h3 class="info__title">Производтвенно - технический
-								отдел</h3>
-							<p>Гордова Марина Сергеевна</p>
-							<a href="tel:+79999999999" class="info__phone">+7 (999) 999-99-98</a>
+							<h3 class="info__title">Доп. контакт для связи</h3>
+							<a href="tel:+79180453838" class="info__phone">+7 918-045-38-38</a>
 						</li>
 						<li class="info__item info__item-also">
-							<p>email<span>gs-chita@mail.ru</span></p>
-							<p>ОГРН<span>1057536023984</span></p>
-							<p>ИНН<span>7356058090</span></p>
+							<p>email<span><a href="mailto:mpk.sp@bk.ru">mpk.sp@bk.ru</a></span></p>
+							<p>ОГРН<span>1242300008830</span></p>
+							<p>ИНН<span>2308295939</span></p>
 						</li>
 					</ul>
 				</article>
 			</div>
-
 		</section>
 
+		<section class="map">
+			<iframe
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7a4eb127d96fed8bd5a5d01007549630ed17ac38d044d98bebab4d25fed0a8e&amp;source=constructor"
+				width="100%" height="500" frameborder="0"></iframe>
+		</section>
 
 	</main>
 	<!-- создать блок для лого -->
