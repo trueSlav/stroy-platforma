@@ -1,5 +1,27 @@
 'use strict'
 
+const page = document.body;
+const mobileBtn = document.querySelector('.nav-mobile');
+const mobileMenu = document.querySelector('.movie-block')
+const mobileMenuLink = document.querySelectorAll('.active-list-item');
+
+mobileBtn.addEventListener('click', (e) => {
+	mobileMenu.classList.toggle('active-mob');
+	if(mobileMenu.classList.contains('active-mob')){
+		page.style.overflow = 'hidden';
+	} else {
+		page.style.overflow = 'auto';
+	}
+});
+
+mobileMenuLink.forEach(item => {
+	item.addEventListener('click', (e) => {
+		mobileMenu.classList.remove('active-mob');
+		page.style.overflow = 'auto';
+	})
+})
+
+
 const cardsList = document.querySelector('.product__list');
 let productsData = [];
 

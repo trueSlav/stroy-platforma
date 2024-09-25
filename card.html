@@ -38,10 +38,16 @@
 </head>
 
 <body class="page">
-
+	<a class="home" href="./index.html">
+		<svg width=" 50" height="50" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z"></path>
+		</svg>
+		<p>Домой</p>
+	</a>
 	<div class="wrapper">
-		<header class="header">
 
+		<header class="header">
 			<address class="header__info content-out">
 				<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
 				<p class="adres">Центральный офис ул. Весенняя 22 офис 43</p>
@@ -54,14 +60,12 @@
 						<a href="./index.html"><img src="./images/logo-two.jpg" alt="логотип компании Строй Платформа"></a>
 					</article>
 
-					<!-- Добавить ссылки в менюшку -->
 					<nav class="nav header__nav">
 						<ul class="nav__list">
-							<li class="nav__item">Главная</li>
-							<li class="nav__item">О компании</li>
-							<li class="nav__item">Услуги</li>
-							<li class="nav__item">Обьекты</li>
-							<li class="nav__item">Контакты</li>
+							<li class="nav__item active-list-item"><a href="./index.html">Главная</a></li>
+							<li class="nav__item"><a href="./index.html#about">О компании</a></li>
+							<li class="nav__item"><a href="./index.html#product">Услуги</a></li>
+							<li class="nav__item"><a href="./index.html#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 
@@ -71,8 +75,7 @@
 						</div>
 						<p class="contacts__block">
 							<span>Позвонить нам</span>
-							<!-- подробнее узнать как правильно номер записать -->
-							<a href="tel:+79999999999" class="contacts__phone">+7 (999) 999-99-98</a>
+							<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
 						</p>
 					</article>
 				</div>
@@ -80,13 +83,6 @@
 		</header>
 
 		<h1 class="title card__title"><span>Информация</span> о товаре </h1>
-
-		<a class="home" href="./index.html">
-			<svg width=" 45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z" fill="#000"></path>
-			</svg>
-		</a>
 
 	</div>
 	<footer class="footer content-out">
@@ -108,8 +104,7 @@
 			</div>
 			<p class="contacts__block">
 				<span>Позвонить нам</span>
-				<!-- подробнее узнать как правильно номер записать -->
-				<a href="tel:+79999999999" class="contacts__phone">+7 (999) 999-99-98</a>
+				<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
 			</p>
 		</article>
 	</footer>

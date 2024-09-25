@@ -82,11 +82,11 @@ function renderInfoProduct(product) {
 					<img src="./images/other/${img}" alt="${descr}">
 					</div>
 					<p class="product__descr">${descr}</p>
-					<h1><a href="./data/catalog/${pdf}">ПРАЙС-ЛИСТ</a></h1>
+					<h1><a target="_blank" href="./data/catalog/${pdf}">ПРАЙС-ЛИСТ</a></h1>
 					</article>
 
 					<div class="product__list-wrapper">
-						<h2>Каталог</h2>
+						<a target="_blank" href="./data/catalog/${pdf}"><h2 class="title title_fz-40"><span>Скачать</span> каталог</h2></a>
 						<ul class="product__list">
 							${li}
 						</ul>

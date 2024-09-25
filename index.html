@@ -39,8 +39,27 @@
 
 <body class="page">
 	<!-- шапка перестает быть sticky после блока header -->
+	<article class="movie-block">
+		<address class="header__info">
+			<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
+			<p class="adres"><a target="_blank"
+					href="https://yandex.ru/maps/?um=constructor%3Af7a4eb127d96fed8bd5a5d01007549630ed17ac38d044d98bebab4d25fed0a8e&source=constructorLink">Центральный
+					офис ул. Весенняя 22 офис 43</a></p>
+			<p>Почта: <a href="mailto:mpk.sp@bk.ru">mpk.sp@bk.ru</a> </p>
+		</address>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item active-list-item"><a href="./index.html">Главная</a></li>
+				<li class="nav__item active-list-item"><a href="#about">О компании</a></li>
+				<li class="nav__item active-list-item"><a href="#product">Услуги</a></li>
+				<li class="nav__item active-list-item"><a href="#contacts">Контакты</a></li>
+			</ul>
+		</nav>
+		<article class="logo">
+			<img src="./images/logo-one.jpg" alt="логотип компании Строй Платформа">
+		</article>
+	</article>
 	<header class="header">
-
 		<address class="header__info content-out">
 			<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
 			<p class="adres"><a target="_blank"
@@ -74,6 +93,12 @@
 						<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
 					</p>
 				</article>
+
+				<article class="nav-mobile">
+					<span></span>
+					<span></span>
+					<span></span>
+				</article>
 			</div>
 		</section>
 
@@ -94,7 +119,7 @@
 	<!-- добавить модификатор title_fz40, чтобы не переписывать тайтлы для h2-->
 	<main class="main">
 		<section class="product" id="product">
-			<h2 class="title product__title"><span>Наш</span> ассортимент</h2>
+			<h2 class="title title_fz40 product__title"><span>Наш</span> ассортимент</h2>
 			<p class="subtitle product__subtitle">Мы поставляем оборудование для строительных и промышленных компаний,
 				производственных предприятий, и металлургических заводов производителей по всей России.</p>
 			<ul class="product__list"></ul>
@@ -141,7 +166,6 @@
 							<li>Дорожное строительство коммуникаций</li>
 							<li>Монтаж ливневых систем</li>
 							<li>Отведение сточных вод</li>
-
 						</ul>
 					</li>
 					<li class="about__item ">
@@ -160,10 +184,9 @@
 			</article>
 		</section>
 
-		<!-- сделать нормально -->
 		<section class="contact-us" id="contacts">
 
-			<h2 class="title contact-us__title">Если у вас возникнут <span>вопросы</span></h2>
+			<h2 class="title title_fz-40 contact-us__title">Если у вас возникнут <span>вопросы</span></h2>
 
 			<div class="form-wrapper">
 				<form action="" class="form">
@@ -212,13 +235,13 @@
 
 						<button class="button form__button" type="submit">Отправить</button>
 					</div>
-
 				</form>
 				<article class="contact-us__info info">
 					<ul class="info__list">
 						<li class="info__item">
 							<h3 class="info__title">Генеральный директор</h3>
 							<p>Утин Петр Петрович</p>
+							<a href="tel:+79333280816" class="info__phone">+7 933-328-08-16</a>
 						</li>
 						<li class="info__item">
 							<h3 class="info__title">Зам. генерального директора</h3>
@@ -237,6 +260,18 @@
 					</ul>
 				</article>
 			</div>
+
+			<article class="requisites">
+				<h2 class="title title_fz-40"><span>реквизиты</span> для оплаты</h2>
+				<a target="_blank" href="./data/requisites.pdf" class="requisites__wrapper-svg">
+					<svg class="requisites__svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path
+							d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+					</svg>
+					<p class="title title_fz-40"><span>скачать</span> реквизиты</p>
+				</a>
+			</article>
+
 		</section>
 
 		<section class="map">
@@ -244,40 +279,43 @@
 				src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7a4eb127d96fed8bd5a5d01007549630ed17ac38d044d98bebab4d25fed0a8e&amp;source=constructor"
 				width="100%" height="500" frameborder="0"></iframe>
 		</section>
-
 	</main>
 	<!-- создать блок для лого -->
 	<footer class="footer content-out">
+
 		<article class="footer__logo logo">
 			<img src="./images/logo-one.jpg" alt="логотип компании Строй Платформа">
 		</article>
+
 		<nav class="nav footer__nav">
 			<ul class="nav__list">
-				<li class="nav__item active-list-item">Главная</li>
-				<li class="nav__item">О компании</li>
-				<li class="nav__item">Услуги</li>
-				<li class="nav__item">Обьекты</li>
-				<li class="nav__item">Контакты</li>
+				<li class="nav__item"><a href="./index.html">Главная</a></li>
+				<li class="nav__item"><a href="#about">О компании</a></li>
+				<li class="nav__item"><a href="#product">Услуги</a></li>
+				<li class="nav__item"><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
+
 		<article class="contacts footer__contacts">
 			<div class="contacts__phone-logo">
 				<img src="./images/header-phone.png" alt="изображение телефона свяжитесь с нами">
 			</div>
 			<p class="contacts__block">
 				<span>Позвонить нам</span>
-				<!-- подробнее узнать как правильно номер записать -->
-				<a href="tel:+79999999999" class="contacts__phone">+7 (999) 999-99-98</a>
+				<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
 			</p>
 		</article>
 	</footer>
 
-	<article class="header__info content-out">
-		<p>СТРОЙ ПЛАТФОРМА ООО</p>
-		<!-- адрес 100% нужно записать более семантично -->
-		<p class="adres">672007, Забайкальский край, г. Чита, ул. Ленина, д. 149Б, помещ. 4</p>
-		<p>Почта: <a href="mailto:gs-chita@mail.ru">gs-chita@mail.ru</a> </p>
-	</article>
+	<address class="header__info content-out">
+		<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
+		<p class="adres"><a target="_blank"
+				href="https://yandex.ru/maps/?um=constructor%3Af7a4eb127d96fed8bd5a5d01007549630ed17ac38d044d98bebab4d25fed0a8e&source=constructorLink">Центральный
+				офис ул. Весенняя 22 офис 43</a></p>
+		<p>Почта: <a href="mailto:mpk.sp@bk.ru">mpk.sp@bk.ru</a> </p>
+	</address>
+
+
 </body>
 
 </html>

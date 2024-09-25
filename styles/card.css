@@ -18,13 +18,63 @@
 	grid-row: 2/3;
 }
 
+.product__list-wrapper>a {
+	cursor: pointer;
+	position: relative;
+}
+
+.product__list-wrapper>a::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 60%;
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/libre-shop-cart.svg');
+	transition: all .3s;
+}
+
+.product__list-wrapper>a:hover::after {
+	transform: scale(1.1);
+}
+
+.product__list-wrapper .title:hover {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	text-underline-offset: 5px;
+	text-decoration-color: var(--accent-color);
+}
+
 .product__list {
 	display: flex;
 	flex-direction: column;
+	padding-left: 30px;
+}
+
+.product__list li {
+	position: relative;
+	font-size: 20px;
+}
+
+.product__list li::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: -20px;
+	border-radius: 50%;
+	border: 1px solid black;
+	transition: all .3s;
+}
+
+.product__list li:hover::before {
+	background-color: var(--accent-color);
 }
 
 article:has(.product__image-wrapper) {
-
 	grid-row: 2/3;
 	grid-column: 2/3;
 }
@@ -32,4 +82,22 @@ article:has(.product__image-wrapper) {
 .product__image-wrapper {
 	width: 400px;
 	height: 400px;
+}
+
+@media (width <=500px) {
+	.product {
+		display: flex;
+		flex-direction: column;
+		padding-top: 50px;
+	}
+
+	.product__image-wrapper {
+		width: 100%;
+	}
+}
+
+@media (width >=500px) {
+	.home {
+		display: none;
+	}
 }
